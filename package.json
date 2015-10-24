@@ -44,7 +44,5 @@
     "test": "multi='mocha-osx-reporter=- dot=-' mocha --reporter mocha-multi build/tests.js",
     "test:watch": "npm run test -- --watch",
     "webpack": "webpack --watch --colors",
-    "dev": "parallelshell 'npm run webpack' 'npm run test:watch' 'npm run dev:open'",
-    "dev:open": "open index.html"
   }
 }
