@@ -9,7 +9,7 @@ import Stream = require('baconjs')
 
 function attach<E>(vtreeStream:Bacon.EventStream<E,vDom.VNode>) {
     return {
-        to: (parentElement) => {
+        to: (parentElement:Element) => {
             var initialNode = vtreeStream
                 .take(1)
                 .map(createElement)

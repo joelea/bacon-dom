@@ -43,6 +43,6 @@
   "scripts": {
     "test": "multi='mocha-osx-reporter=- dot=-' mocha --reporter mocha-multi build/tests.js",
     "test:watch": "npm run test -- --watch",
-    "webpack": "webpack --watch --colors",
+    "webpack": "webpack --watch --colors"
   }
 }
