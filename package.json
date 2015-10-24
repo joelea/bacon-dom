@@ -1,0 +1,50 @@
+{
+  "name": "bacon-dom",
+  "version": "0.0.1",
+  "description": "Bind virtual-dom elements inside BaconJS observables to real dom elements",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelea/bacon-dom.git"
+  },
+  "keywords": [
+    "bacon",
+    "frp",
+    "virtual-dom",
+    "dom"
+  ],
+  "author": "jlea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelea/bacon-dom/issues"
+  },
+  "homepage": "https://github.com/joelea/bacon-dom#readme",
+  "dependencies": {
+    "baconjs": "^0.7.77",
+    "virtual-dom": "^2.1.1"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^0.14.0",
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3",
+    "mocha-multi": "^0.7.1",
+    "mocha-osx-reporter": "^0.1.2",
+    "parallelshell": "^2.0.0",
+    "path": "^0.12.7",
+    "require-dir": "^0.3.0",
+    "style-loader": "^0.12.4",
+    "ts-loader": "^0.5.5",
+    "typescript": "^1.6.2",
+    "webpack": "^1.12.2"
+  },
+  "scripts": {
+    "test": "multi='mocha-osx-reporter=- dot=-' mocha --reporter mocha-multi build/tests.js",
+    "test:watch": "npm run test -- --watch",
+    "webpack": "webpack --watch --colors",
+    "dev": "parallelshell 'npm run webpack' 'npm run test:watch' 'npm run dev:open'",
+    "dev:open": "open index.html"
+  }
+}
