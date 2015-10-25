@@ -1,7 +1,6 @@
 /// <reference path="../typings/tsd.d.ts"/>
 
 import vDom = require('virtual-dom');
-import h = require('virtual-dom/h');
 import diff = require('virtual-dom/diff');
 import patch = require('virtual-dom/patch');
 import createElement = require('virtual-dom/create-element');
