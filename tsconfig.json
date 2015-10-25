@@ -7,5 +7,9 @@
         "sourceMap": true,
         "rootDir": "sr",
         "outDir": "build"
-    }
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
 }
