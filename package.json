@@ -4,9 +4,9 @@
   "description": "Bind virtual-dom elements inside BaconJS observables to real dom elements",
   "main": "dist/index.js",
   "scripts": {
-    "test": "multi='mocha-osx-reporter=- dot=-' mocha --reporter mocha-multi build/tests.js",
+    "test": "multi='mocha-osx-reporter=- dot=-' mocha --reporter mocha-multi dist/specs",
     "test:watch": "npm run test -- --watch",
-    "build": "tsc --watch --colors"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "mocha": "^2.3.3",
     "mocha-multi": "^0.7.1",
     "mocha-osx-reporter": "^0.1.2",
+    "mock-browser": "^0.91.34",
     "typescript": "^1.6.2"
   }
 }

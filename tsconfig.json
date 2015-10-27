@@ -5,8 +5,8 @@
         "removeComments": true,
         "preserveConstEnums": true,
         "sourceMap": true,
-        "rootDir": "sr",
-        "outDir": "build"
+        "rootDir": "src",
+        "outDir": "dist"
     },
     "exclude": [
         "node_modules",
