@@ -6,11 +6,9 @@ before_script:
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
 
-branches:
-  only:
-    - master
-
 deploy:
+  on:
+    - master
   provider: npm
   email: "joeleapublic@gmail.com"
   api_key:
