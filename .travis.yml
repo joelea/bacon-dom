@@ -11,8 +11,6 @@ branches:
     - master
 
 deploy:
-  on:
-    tags: true
   provider: npm
   api_key:
     secure: jptOJc6aieA7VzTswBq+VM+vvd9aMtP51YhL9S2O/JotawbYdUTVxzWJSPNu7Ywst+h8iE5ynNgo0G0xFzqcp0qyKqdtulsqWQ48+2AyKl0lHAcAF7bptkwlKMPc3HCGEdiYVln926Brp/Pebu7lWC9DgjDaES1Uj5o7XLTWkl8jkYFF31P7Cm3WSkwaI/TS96Am0nHjLzh/ml3+F+lWgf+OBPSHh96rnqQnJ0GNFziDfkxEJfhd/K03IDKA1DhYLubEfPj2c4r+ehvf9LXtrlVAJyNoirGCxrBXbTF737uq19IvS1+MWIXM3DmKyrX/QjAJYPu3H8q2Sgv5OSZ/NTx/ebP1ctmle9pJh39tBG5CGjpyAZ1arswrC1lieLhi1JXJxSK+5LJUHYU3B3lBW3HtaTd41Jnn3rhYpkSHF21olh1lL1h69oHLJuZVjUMmwNpTMgeoHwQlq0g+r7eoDbH5NHfMu5UHwtZ26YoQW6/8Yr6nnBOCatyqiG5N+3TnnOiC+l9eTI6SsOfyCccD9SiBMf06+sRyy70R7jAS5th/cOCSLMx22KQ50l9b6uuXqo3H51sGkkDnBMDDaQqv7XE6zroC6fETijCD0zMto1xrkLubw4NUD/nnksr3OWDXri8+RQIIOdPXhhLSYW9pMKeaHbJ16Ozw8wML7Py0oOg=
