@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/joelea/bacon-dom.svg?branch=master)](https://travis-ci.org/joelea/bacon-dom)
+[![Build Status](https://travis-ci.org/joelea/bacon-dom.svg?branch=develop)](https://travis-ci.org/joelea/bacon-dom)
