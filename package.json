@@ -29,12 +29,19 @@
     "virtual-dom": "^2.1.1"
   },
   "devDependencies": {
-    "benv": "^3.0.0",
     "chai": "^3.3.0",
+    "karma": "^0.13.14",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-mocha": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-webpack": "^1.7.0",
     "mocha": "^2.3.3",
+    "mocha-loader": "^0.7.1",
     "mocha-multi": "^0.7.1",
     "mocha-osx-reporter": "^0.1.2",
-    "mock-browser": "^0.91.34",
-    "typescript": "^1.6.2"
+    "phantomjs": "^1.9.18",
+    "typescript": "^1.6.2",
+    "webpack": "^1.12.2",
+    "webpack-typescript": "^0.5.6"
   }
 }
