@@ -1,3 +1,5 @@
+addons:
+  firefox: "39.0"
 language: node_js
 node_js:
   - "4.1"
