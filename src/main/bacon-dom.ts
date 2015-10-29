@@ -30,7 +30,7 @@ function attach<E>(vtreeStream:Bacon.EventStream<E,vDom.VNode>) {
                     })
                 })
         }
-}
+    }
 
 }
 
