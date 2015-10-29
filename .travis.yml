@@ -11,6 +11,11 @@ before_deploy:
   - "echo 'Built:'"
   - "ls dist"
 
+branches:
+  only:
+    - master
+    - develop
+
 deploy:
   on:
     - master
