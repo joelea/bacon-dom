@@ -1,0 +1,42 @@
+{
+  "name": "bacon-dom",
+  "version": "0.0.1",
+  "description": "Bind virtual-dom elements inside BaconJS observables to real dom elements",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "karma start --single-run",
+    "test:watch": "karma start",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelea/bacon-dom.git"
+  },
+  "keywords": [
+    "bacon",
+    "frp",
+    "virtual-dom",
+    "dom"
+  ],
+  "author": "jlea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelea/bacon-dom/issues"
+  },
+  "homepage": "https://github.com/joelea/bacon-dom#readme",
+  "dependencies": {
+    "baconjs": "^0.7.77",
+    "virtual-dom": "^2.1.1"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "karma": "^0.13.14",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-mocha": "^0.2.0",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.3.3",
+    "typescript": "^1.6.2",
+    "webpack": "^1.12.2",
+    "webpack-typescript": "^0.5.6"
+  }
+}
