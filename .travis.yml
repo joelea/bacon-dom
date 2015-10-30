@@ -8,8 +8,6 @@ before_script:
 
 before_deploy:
   - "npm run build"
-  - "echo 'Built:'"
-  - "ls dist"
 
 branches:
   only:
