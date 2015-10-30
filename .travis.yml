@@ -18,7 +18,8 @@ branches:
 
 deploy:
   on:
-    - master
+    branch:
+      - master
   provider: npm
   email: "joeleapublic@gmail.com"
   api_key:
