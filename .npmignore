@@ -1,0 +1,9 @@
+# Avoid the dist files being ignored on publish
+
+.idea
+.ts-build
+node_modules
+webpack-test.iml
+build
+
+build
