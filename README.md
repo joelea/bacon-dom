@@ -11,7 +11,7 @@ var attach = require("../main/bacon-dom");
 
 var ticks = Bacon.interval(1000, null);
 var count = ticks.scan( (sum, newValue) => sum + 1 );
-var html = count.changes().map( (n) => h('.count', [n]) )
+var html = count.changes().map( (n) => h('.count', [String(n)]) )
 
 attach(html).to(document.body);
 ```
