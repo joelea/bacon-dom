@@ -34,8 +34,4 @@ function attach<E>(vtreeStream:Bacon.EventStream<E,vDom.VNode>) {
 
 }
 
-declare module "bacon-dom" {
-    export = attach;
-}
-
 export = attach;
