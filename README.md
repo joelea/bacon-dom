@@ -16,6 +16,10 @@ var html = count.changes().map( function(n) { h('.count', [String(n)]) } );
 attach(html).to(document.body);
 ```
 
+### Typescript
+
+Get a definitely typed compatible definition file from src/definitelyTyped.
+
 ### Dev
 
 * Build with ```npm run build```
