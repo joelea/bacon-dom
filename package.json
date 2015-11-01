@@ -1,8 +1,11 @@
 {
   "name": "bacon-dom",
-  "version": "0.1.8",
+  "version": "0.1.10",
   "description": "Bind virtual-dom elements inside BaconJS observables to real dom elements",
   "main": "dist/main/bacon-dom.js",
+  "typescript": {
+    "definition": "dist/main/bacon-dom.d.ts"
+  },
   "scripts": {
     "test": "karma start --single-run",
     "test:watch": "karma start",

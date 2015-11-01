@@ -7,14 +7,18 @@ Create a stream of virtual-dom HTML trees, attach them to a real node.
 ```
 var Bacon = require("baconjs");
 var h = require("virtual-dom/h")
-var attach = require("../main/bacon-dom");
-
-var ticks = Bacon.interval(1000, null);
-var count = ticks.scan( (sum, newValue) => sum + 1 );
-var html = count.changes().map( (n) => h('.count', [String(n)]) )
-
+var attach = require("bacon-dom");
+ 
+var ticks = Bacon.interval(1000, 1);
+var count = ticks.scan(0, function(sum, newValue) { sum + 1 } );
+var html = count.changes().map( function(n) { h('.count', [String(n)]) } );
+ 
 attach(html).to(document.body);
 ```
+
+### Typescript
+
+Get a definitely typed compatible definition file from src/definitelyTyped.
 
 ### Dev
 
