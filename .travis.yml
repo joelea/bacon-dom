@@ -6,8 +6,11 @@ before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
 
+script:
+  - npm run build
+  - npm test
+
 before_deploy:
-  - "npm run build"
   - "echo 'deploying:'"
   - "ls -R ."
 
