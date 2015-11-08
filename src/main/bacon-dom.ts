@@ -10,12 +10,11 @@ import Stream = require('baconjs');
 function attach<E>(vtreeStream:Bacon.EventStream<E,vDom.VNode>) {
     return {
         to: (parentElement:Element) => {
-            var initialDom = h('.placeholder', []);
-            var rootNode = createElement(initialDom);
-            parentElement.appendChild(rootNode)
+            var initialElement = h('.placeholder');
+            var rootNode = parentElement.appendChild(createElement(initialElement))
 
             vtreeStream
-                .diff(initialDom, diff)
+                .diff(initialElement, diff)
                 .onValue( (elementDiff) => {
                     patch(rootNode, elementDiff)
                 })
