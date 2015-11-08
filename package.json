@@ -1,6 +1,6 @@
 {
   "name": "bacon-dom",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Bind virtual-dom elements inside BaconJS observables to real dom elements",
   "main": "dist/main/bacon-dom.js",
   "typescript": {
