@@ -14,6 +14,12 @@ document.body.appendChild(testDomElement)
 beforeEach(() => testDomElement.innerHTML = '')
 
 describe("bacon-dom", () => {
+    it("triggers no dom changes when the observable does not change", () => {
+        var emptyDomStream = new Bacon.Bus();
+        attach(emptyDomStream).to(testDomElement);
+        expect(testDomElement.children.length).to.equal(0);
+    })
+
     it("contains the initial dom state", (done) => {
         var initialDom = Bacon.once(h('.hello-world', []));
         attach(initialDom).to(testDomElement);
